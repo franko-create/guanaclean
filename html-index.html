@@ -1,0 +1,322 @@
+ <!DOCTYPE html>
+<html lang="es-CR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO OPTIMIZADO -->
+    <title>Guanaclean by Tatiana Salgado | Limpieza Profunda en Guanacaste</title>
+    <meta name="description" content="Especialistas en limpieza profunda y restauración en Guanacaste liderados por Tatiana Salgado. Alfombras, vidrios, pisos, decks y más. ¡Contáctenos ahora!">
+    <meta name="keywords" content="Limpieza Guanacaste, Tatiana Salgado, Guanaclean, Limpieza de alfombras, Pulido de pisos Costa Rica, Limpieza de casas, Paneles solares">
+    <link rel="canonical" href="https://guanaclean.com/">
+
+    <!-- OPEN GRAPH (Para Facebook y WhatsApp) -->
+    <meta property="og:title" content="Guanaclean by Tatiana Salgado - Limpieza de Alta Calidad">
+    <meta property="og:description" content="Revitalizamos tus espacios residenciales y comerciales en Guanacaste. Calidad y rapidez garantizada.">
+    <meta property="og:image" content="https://guanaclean.com/wp-content/uploads/2024/09/2150454553.jpg">
+    <meta property="og:url" content="https://guanaclean.com/">
+    <meta property="og:type" content="website">
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #007ac3;
+            --secondary: #18addc;
+            --accent: #25d366;
+            --dark: #3b3b3b;
+            --light: #f7f7f7;
+            --white: #ffffff;
+            --shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Lato', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: var(--light); 
+            color: var(--dark); 
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Josefin Sans', sans-serif; }
+
+        /* HEADER */
+        header { 
+            background: var(--white); 
+            padding: 15px 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: var(--shadow);
+        }
+        .logo img { max-width: 180px; height: auto; }
+        nav a { 
+            text-decoration: none; 
+            color: var(--dark); 
+            margin-left: 20px; 
+            font-weight: 600; 
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        nav a:hover { color: var(--primary); }
+
+        /* HERO SECTION */
+        .hero { 
+            background: linear-gradient(rgba(0, 122, 195, 0.6), rgba(0, 122, 195, 0.6)), url('https://guanaclean.com/wp-content/uploads/2024/10/limpieza-de-colchones.jpg');
+            background-size: cover; 
+            background-position: center; 
+            height: 500px; 
+            display: flex; 
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+            color: var(--white);
+            padding: 0 20px;
+        }
+        .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 10px; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin-bottom: 30px; }
+
+        /* SECCIONES COMUNES */
+        .container { max-width: 1200px; margin: auto; padding: 80px 20px; }
+        .section-title { 
+            color: var(--primary); 
+            text-align: center; 
+            font-size: 2.5rem; 
+            margin-bottom: 40px; 
+            position: relative;
+        }
+        .section-title::after {
+            content: ''; width: 60px; height: 3px; background: var(--secondary);
+            position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
+        }
+
+        /* GRID DE SERVICIOS */
+        .services-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
+        .card { 
+            background: var(--white); 
+            padding: 40px 30px; 
+            border-radius: 15px; 
+            text-align: center; 
+            box-shadow: var(--shadow); 
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 70px; margin-bottom: 20px; }
+        .card h3 { color: var(--primary); margin-bottom: 15px; text-transform: uppercase; }
+
+        /* BOTONES */
+        .btn { 
+            background: var(--primary); 
+            color: var(--white); 
+            padding: 12px 30px; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            display: inline-block; 
+            transition: 0.3s; 
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover { background: var(--secondary); box-shadow: 0 5px 15px rgba(24, 173, 220, 0.4); }
+
+        /* TESTIMONIOS */
+        .testimonials { background: var(--white); }
+        .stars { color: #ffc107; font-size: 22px; margin-bottom: 15px; }
+        .testimonial-text { font-style: italic; color: #666; margin-bottom: 20px; }
+        .client-name { font-weight: 700; color: var(--primary); margin: 0; }
+
+        /* FORMULARIO */
+        .contact-section { background: #eee; }
+        .contact-flex { display: flex; flex-wrap: wrap; gap: 40px; }
+        .contact-info { flex: 1; min-width: 300px; }
+        .contact-form { 
+            flex: 1; 
+            min-width: 300px; 
+            background: var(--white); 
+            padding: 40px; 
+            border-radius: 15px; 
+            box-shadow: var(--shadow);
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: 600; }
+        .form-group input, .form-group textarea { 
+            width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;
+        }
+        .form-group textarea { height: 120px; }
+
+        /* WHATSAPP FLOTANTE */
+        .whatsapp-float {
+            position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px; background-color: var(--accent);
+            border-radius: 50px; text-align: center; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index: 10000;
+            display: flex; align-items: center; justify-content: center; transition: 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1) rotate(5deg); }
+        .whatsapp-icon { width: 35px; height: 35px; }
+
+        /* MODAL DE MENSAJE */
+        #message-box {
+            display: none; position: fixed; top: 20px; right: 20px; background: var(--primary); color: white;
+            padding: 20px 40px; border-radius: 8px; z-index: 20000; box-shadow: var(--shadow);
+        }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 15px; }
+            nav a { margin: 0 10px; font-size: 12px; }
+            .hero h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CAJA DE NOTIFICACIÓN PERSONALIZADA -->
+    <div id="message-box">¡Mensaje enviado con éxito!</div>
+
+    <header>
+        <div class="logo">
+            <img src="https://guanaclean.com/wp-content/uploads/2024/09/LOGO.png" alt="Guanaclean by Tatiana Salgado Logo">
+        </div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Guanaclean by Tatiana Salgado</h1>
+        <p>Expertos en limpieza profunda y restauración con tecnología molecular en Guanacaste.</p>
+        <a href="https://wa.me/50670747580?text=Hola%20Tatiana,%20deseo%20una%20cotización" class="btn">COTICE AQUÍ</a>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">¿Quiénes Somos?</h2>
+        <div style="text-align: center; max-width: 850px; margin: auto; font-size: 1.1rem;">
+            <p>En <strong>Guanaclean</strong>, bajo la dirección de <strong>Tatiana Salgado</strong>, nos especializamos en devolverle la vida a sus espacios. Utilizamos productos de alta gama con acción a nivel molecular y equipos de última tecnología para garantizar una limpieza que no solo se ve, sino que se siente.</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE VIDEO -->
+    <section style="background: #000; height: 400px; overflow: hidden; position: relative;">
+        <iframe style="position: absolute; top: 50%; left: 50%; width: 100vw; height: 56.25vw; min-height: 100%; min-width: 177.77vh; transform: translate(-50%, -50%); pointer-events: none;" 
+                src="https://www.youtube.com/embed/kqV9yHuGP9E?autoplay=1&mute=1&loop=1&playlist=kqV9yHuGP9E&controls=0" 
+                frameborder="0" allow="autoplay; encrypted-media"></iframe>
+    </section>
+
+    <section id="servicios" class="container">
+        <h2 class="section-title">Nuestros Servicios Principales</h2>
+        <div class="services-grid">
+            <div class="card">
+                <img src="https://guanaclean.com/wp-content/uploads/2024/09/window_1211223.png" alt="Limpieza de Ventanas">
+                <h3>Ventanas y Vidrios</h3>
+                <p>Pulido profesional y sellado para una transparencia total y duradera.</p>
+                <a href="https://wa.me/50670747580?text=Info%20sobre%20Ventanas" class="btn">Solicitar</a>
+            </div>
+            <div class="card">
+                <img src="https://guanaclean.com/wp-content/uploads/2024/09/shower_10784655.png" alt="Baños y Duchas">
+                <h3>Baños y Duchas</h3>
+                <p>Limpieza profunda de azulejos, eliminación de sarro y pulido de grifería.</p>
+                <a href="https://wa.me/50670747580?text=Info%20sobre%20Baños" class="btn">Solicitar</a>
+            </div>
+            <div class="card">
+                <img src="https://guanaclean.com/wp-content/uploads/2024/09/carpet_6080314.png" alt="Alfombras">
+                <h3>Alfombras y Tapicería</h3>
+                <p>Lavado profundo de muebles, colchones y alfombras con secado rápido.</p>
+                <a href="https://wa.me/50670747580?text=Info%20sobre%20Alfombras" class="btn">Solicitar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Clientes Satisfechos</h2>
+            <div class="services-grid">
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Tatiana y su equipo son increíbles. Mis ventanas nunca habían estado tan limpias. 100% recomendados."</p>
+                    <p class="client-name">Ana Lucía Mora</p>
+                </div>
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"El servicio de limpieza de paneles solares es excelente. Muy profesionales y cuidadosos."</p>
+                    <p class="client-name">Robert Smith</p>
+                </div>
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Lograron quitar el sarro de mis baños que nadie más pudo. Guanaclean es otro nivel."</p>
+                    <p class="client-name">Elena Valverde</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contáctenos</h2>
+            <div class="contact-flex">
+                <div class="contact-info">
+                    <h3>¿Listo para renovar su espacio?</h3>
+                    <p>Déjenos sus datos y nos pondremos en contacto con usted lo antes posible para brindarle una cotización personalizada.</p>
+                    <p><strong>📍 Ubicación:</strong> Guanacaste, Costa Rica</p>
+                    <p><strong>📞 Teléfono:</strong> +506 7074 7580</p>
+                    <p><strong>📧 Email:</strong> info@guanaclean.com</p>
+                </div>
+                <div class="contact-form">
+                    <form id="form-contacto">
+                        <div class="form-group">
+                            <label>Nombre Completo</label>
+                            <input type="text" placeholder="Ej: Tatiana Salgado" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Correo Electrónico</label>
+                            <input type="email" placeholder="correo@ejemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Mensaje</label>
+                            <textarea placeholder="¿En qué podemos ayudarle?"></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--dark); color: var(--white); text-align: center; padding: 40px 20px;">
+        <p>&copy; 2026 Guanaclean Costa Rica - Tatiana Salgado</p>
+        <p style="font-size: 12px; opacity: 0.7;">Calidad • Eficiencia • Rapidez</p>
+    </footer>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/50670747580?text=Hola%20Tatiana,%20vengo%20del%20sitio%20web%20y%20deseo%20información." 
+       class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Tatiana Salgado" class="whatsapp-icon">
+    </a>
+
+    <script>
+        // Lógica simple para el formulario
+        document.getElementById('form-contacto').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const msgBox = document.getElementById('message-box');
+            msgBox.style.display = 'block';
+            this.reset();
+            
+            setTimeout(() => {
+                msgBox.style.display = 'none';
+            }, 3000);
+        });
+    </script>
+
+</body>
+</html>
